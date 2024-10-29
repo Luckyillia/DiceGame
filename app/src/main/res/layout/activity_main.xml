@@ -21,7 +21,7 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Roll the dice"
+        android:text="Rzuc kosciami"
         android:layout_margin="10dp"/>
 
     <LinearLayout
@@ -87,14 +87,14 @@
 
     </LinearLayout>
     <TextView
-        android:id="@+id/score1"
+        android:id="@+id/rollScore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wynik tego losowania: 0"
         android:textSize="20sp"
         android:layout_margin="10dp"/>
     <TextView
-        android:id="@+id/score2"
+        android:id="@+id/gameScore"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wynik gry: 0"
@@ -108,10 +108,10 @@
         android:textSize="20sp"
         android:layout_margin="10dp"/>
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:text="Resetuj wynik"
         android:layout_margin="10dp"/>
 
 
