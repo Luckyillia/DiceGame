@@ -1,12 +1,15 @@
 package com.example.dicegame;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     private int gameScore = 0;
@@ -53,13 +56,24 @@ public class MainActivity extends AppCompatActivity {
         rollScore = 0;
         for (int i = 0; i < textViews.size(); i++) {
             arr[i] = (int)(Math.random() * (max - min + 1)) + min;
-            rollScore += arr[i];
+        }
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
+
+        for (int key : map.keySet()) {
+            int count = map.get(key);
+            if (count > 1) {
+                rollScore += key * count;
+            }
         }
         updateTextView(arr);
         updateRollScore(rollScore);
         updateGameScore(rollScore);
         updateRollCount();
     }
+
     private void updateTextView(int[] diceResult) {
         for (int i = 0; i < diceResult.length; i++) {
             TextView textView = textViews.get(i);

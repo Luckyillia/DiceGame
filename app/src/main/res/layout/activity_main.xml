@@ -15,12 +15,14 @@
         android:textColor="#FFFFFF"
         android:text="Gra w kosci. Autor: ILLIA ZAICHENKO"
         android:textSize="23sp"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:letterSpacing="1"
         android:text="Rzuc kosciami"
         android:layout_margin="10dp"/>
 
@@ -111,6 +113,8 @@
         android:id="@+id/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:letterSpacing="1"
         android:text="Resetuj wynik"
         android:layout_margin="10dp"/>
 
