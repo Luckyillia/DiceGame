@@ -8,23 +8,13 @@
 
     <TextView
         android:id="@+id/text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:background="#A52A2A"
-        android:textColor="#FFFFFF"
         android:text="Gra w kosci. Autor: ILLIA ZAICHENKO"
-        android:textSize="23sp"
-        android:layout_margin="10dp" />
+        style="@style/textViews.autor"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:letterSpacing="1"
         android:text="Rzuc kosciami"
-        android:layout_margin="10dp"/>
+        style="@style/buttons"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,89 +24,41 @@
 
         <TextView
             android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="9dp"
-            android:gravity="center"
-            android:text="?"
-            android:textSize="96sp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            style="@style/textViewsDices" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="9dp"
-            android:gravity="center"
-            android:text="?"
-            android:textSize="96sp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            style="@style/textViewsDices" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="9dp"
-            android:gravity="center"
-            android:text="?"
-            android:textSize="96sp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            style="@style/textViewsDices" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="9dp"
-            android:gravity="center"
-            android:text="?"
-            android:textSize="96sp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            style="@style/textViewsDices" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="9dp"
-            android:gravity="center"
-            android:text="?"
-            android:textSize="96sp"
-            android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            style="@style/textViewsDices" />
 
     </LinearLayout>
     <TextView
         android:id="@+id/rollScore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Wynik tego losowania: 0"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
+        style="@style/textViews"/>
     <TextView
         android:id="@+id/gameScore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Wynik gry: 0"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
+        style="@style/textViews"/>
     <TextView
         android:id="@+id/count"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Liczba rzutow: 0"
-        android:textSize="20sp"
-        android:layout_margin="10dp"/>
+        style="@style/textViews"/>
     <Button
         android:id="@+id/reset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:letterSpacing="1"
         android:text="Resetuj wynik"
-        android:layout_margin="10dp"/>
+        style="@style/buttons"/>
 
 
 </LinearLayout>
